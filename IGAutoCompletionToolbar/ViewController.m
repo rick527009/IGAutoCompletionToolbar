@@ -23,7 +23,7 @@
     [[IGAutoCompletionToolbarCell appearance] setTextColor:[UIColor blueColor]];
     [[IGAutoCompletionToolbarCell appearance] setHighlightedTextColor:[UIColor whiteColor]];
     [[IGAutoCompletionToolbarCell appearance] setBackgroundColor:[UIColor whiteColor]];
-    [[IGAutoCompletionToolbarCell appearance] setHighlightedBackgroundColor:[UIColor redColor]];
+    [[IGAutoCompletionToolbarCell appearance] setHighlightedBackgroundColor:[UIColor lightGrayColor]];
     [[IGAutoCompletionToolbarCell appearance] setTextFont:[UIFont fontWithName:@"HelveticaNeue" size:14.0]];
     [[IGAutoCompletionToolbarCell appearance] setCornerRadius:14];
 
