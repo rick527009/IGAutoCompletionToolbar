@@ -20,10 +20,10 @@
     [super viewDidLoad];
     
     // customization
-    [[IGAutoCompletionToolbarCell appearance] setTextColor:[UIColor whiteColor]];
-    [[IGAutoCompletionToolbarCell appearance] setHighlightedTextColor:self.view.tintColor];
-    [[IGAutoCompletionToolbarCell appearance] setBackgroundColor:self.view.tintColor];
-    [[IGAutoCompletionToolbarCell appearance] setHighlightedBackgroundColor:[UIColor whiteColor]];
+    [[IGAutoCompletionToolbarCell appearance] setTextColor:[UIColor blueColor]];
+    [[IGAutoCompletionToolbarCell appearance] setHighlightedTextColor:[UIColor whiteColor]];
+    [[IGAutoCompletionToolbarCell appearance] setBackgroundColor:[UIColor whiteColor]];
+    [[IGAutoCompletionToolbarCell appearance] setHighlightedBackgroundColor:[UIColor redColor]];
     [[IGAutoCompletionToolbarCell appearance] setTextFont:[UIFont fontWithName:@"HelveticaNeue" size:14.0]];
     [[IGAutoCompletionToolbarCell appearance] setCornerRadius:14];
 
