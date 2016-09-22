@@ -42,8 +42,7 @@
         
         self.layer.cornerRadius = [[[self class] appearance] cornerRadius];
         
-        UIColor* bgColor = [[[self class] appearance] backgroundColor];
-        self.layer.backgroundColor = bgColor.CGColor;
+        self.layer.backgroundColor = [[[self class] appearance] backgroundColor];
 
         [self.contentView addSubview:self.textLabel];
     }
@@ -60,7 +59,7 @@
     if (highlighted) {
         self.layer.backgroundColor = [[[self class] appearance] highlightedBackgroundColor].CGColor;
     } else {
-        self.layer.backgroundColor = [[[self class] appearance] backgroundColor].CGColor;
+        self.layer.backgroundColor = [[[self class] appearance] backgroundColor];
     }
 }
 
