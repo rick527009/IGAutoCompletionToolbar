@@ -117,8 +117,11 @@ NSString* const IGAutoCompletionToolbarCellID = @"IGAutoCompletionToolbarCellID"
         return [self.toolbarDelegate autoCompletionToolbar:self cellSizeWithObject:object];
     } else {
         NSString* title = object;
-        CGSize size = [title sizeWithFont:[UIFont fontWithName:@"HelveticaNeue" size:13.0]
-                        constrainedToSize:CGSizeMake(MAX_LABEL_WIDTH, 32.0)];
+        UIFont *font = [UIFont fontWithName:@"HelveticaNeue" size:13.0];
+        CGSize size = [title boundingRectWithSize:CGSizeMake(MAX_LABEL_WIDTH, 32.0)
+                                          options:NSStringDrawingTruncatesLastVisibleLine
+                                       attributes:@{NSFontAttributeName: font}
+                                          context:nil].size;
         return CGSizeMake(size.width + 14.0, 32);
     }
 }
