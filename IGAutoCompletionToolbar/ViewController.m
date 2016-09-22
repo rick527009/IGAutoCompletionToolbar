@@ -39,6 +39,8 @@
 
 - (void) autoCompletionToolbar:(IGAutoCompletionToolbar*)toolbar didSelectItemWithObject:(id)object {
     NSLog(@"tag selected - %@", object);
+    toolbar.textField.text = [NSString stringWithFormat:@"%@", object];
+    toolbar.filter = [NSString stringWithFormat:@"%@", object];
 }
 
 @end
