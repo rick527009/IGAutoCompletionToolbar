@@ -17,7 +17,7 @@
 @implementation IGAutoCompletionToolbarCell
 
 +(void) initialize {
-    [[self appearance] setTextFont:[UIFont fontWithName:@"HelveticaNeue" size:13.0]];
+    [[self appearance] setTextFont:[UIFont systemFontOfSize:13.0]];
     [[self appearance] setTextColor:[UIColor whiteColor]];
     [[self appearance] setBackgroundColor:[UIColor blueColor]];
     [[self appearance] setHighlightedTextColor:[UIColor blueColor]];
